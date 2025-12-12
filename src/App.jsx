@@ -55,629 +55,559 @@ const Presentation = () => {
       content: (
         <div className="h-full grid grid-cols-2">
           {/* Left side - Orange */}
-          <div className="bg-gradient-to-br from-yellow-400 to-orange-500 p-12 flex flex-col justify-center">
-            <h2 className="text-white text-4xl font-bold mb-12">Kondisi Indonesia 2014 - 2018</h2>
+          <div className="bg-gradient-to-br from-yellow-400 to-orange-500 p-12 flex flex-col justify-between">
+            <h2 className="text-black text-3xl font-bold mb-8">Indonesian Economy 2014–2018</h2>
             
-            <div className="space-y-6">
-              <div className="bg-white rounded-xl p-6 hover:scale-105 transition-transform duration-300">
-                <h3 className="font-bold text-xl mb-3">POPULATION</h3>
-                <p className="text-lg font-semibold">235 → 263 mio</p>
-                <p className="text-gray-600 mt-2">population growth → increased consumers</p>
+            <div className="space-y-6 flex-1">
+              <div className="bg-white rounded-2xl p-6 border-4 border-black hover:scale-105 transition-transform duration-300">
+                <h3 className="font-bold text-lg mb-3">POPULATION</h3>
+                <p className="text-base font-semibold mb-2">235 → 263 mio</p>
+                <p className="text-gray-700 text-sm">Population Growth → Increased Consumers</p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 hover:scale-105 transition-transform duration-300">
-                <h3 className="font-bold text-xl mb-3">GDP (Gross Domestic Product)</h3>
-                <p className="text-lg font-semibold">USD 890 B → 1,042 B</p>
-                <p className="text-gray-600 mt-2">economic growth → increased spending</p>
+              <div className="bg-white rounded-2xl p-6 border-4 border-black hover:scale-105 transition-transform duration-300">
+                <h3 className="font-bold text-lg mb-3">GDP (Gross Domestic Product)</h3>
+                <p className="text-base font-semibold mb-2">USD 890 B → 1,042 B</p>
+                <p className="text-gray-700 text-sm">Economic Growth → Increased Spending</p>
               </div>
 
-              <div className="bg-white rounded-xl p-6 hover:scale-105 transition-transform duration-300">
-                <h3 className="font-bold text-xl mb-3">CPI (Consumer Price Index)</h3>
-                <p className="text-lg font-semibold">226 → 267</p>
-                <p className="text-gray-600 mt-2">general inflation → reasonable increase in prices</p>
+              <div className="bg-white rounded-2xl p-6 border-4 border-black hover:scale-105 transition-transform duration-300">
+                <h3 className="font-bold text-lg mb-3">CPI (Consumer Price Index)</h3>
+                <p className="text-base font-semibold mb-2">226 → 267</p>
+                <p className="text-gray-700 text-sm">General Inflation → Reasonable Increase in Prices</p>
               </div>
             </div>
 
-            <p className="text-xs text-white/70 mt-8">Source: BOOST Business Case Document</p>
+            <p className="text-xs text-black mt-4">Source: BOOST Business Case Document</p>
           </div>
 
           {/* Right side - White with data */}
-          <div className="bg-white p-12 flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-8">Indonesian Dairy Market Size (2014 - 2018)</h2>
+          <div className="bg-white p-8 flex flex-col">
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Indonesian Dairy Market Size 2014 - 2018</h2>
             
-            <div className="mb-12">
+            <div className="mb-6">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-gradient-to-r from-yellow-400 to-orange-400">
-                    <th className="border-2 border-gray-300 p-3 text-left"></th>
-                    <th className="border-2 border-gray-300 p-3 text-center font-bold">CAGR by Volume</th>
-                    <th className="border-2 border-gray-300 p-3 text-center font-bold">CAGR by Value</th>
+                    <th className="border-2 border-gray-400 p-3 text-left font-bold text-sm"></th>
+                    <th className="border-2 border-gray-400 p-3 text-center font-bold text-sm">CAGR by Volume</th>
+                    <th className="border-2 border-gray-400 p-3 text-center font-bold text-sm">CAGR by Value</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-orange-100 hover:bg-orange-200 transition-colors">
-                    <td className="border-2 border-gray-300 p-3 font-bold bg-orange-300">Milk</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">7.08%</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">12.28%</td>
-                  </tr>
                   <tr className="hover:bg-orange-50 transition-colors">
-                    <td className="border-2 border-gray-300 p-3 font-bold bg-orange-300">Ice Cream</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">11.14%</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">13.63%</td>
+                    <td className="border-2 border-gray-400 p-3 font-bold bg-orange-400 text-sm">Milk</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">7.08%</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">12.28%</td>
                   </tr>
-                  <tr className="hover:bg-orange-50 transition-colors">
-                    <td className="border-2 border-gray-300 p-3 font-bold bg-orange-300">Yogurt</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">12.19%</td>
-                    <td className="border-2 border-gray-300 p-3 text-center font-bold">16.13%</td>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="border-2 border-gray-400 p-3 font-bold bg-orange-400 text-sm">Ice Cream</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">11.14%</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">13.63%</td>
+                  </tr>
+                  <tr className="hover:bg-gray-50 transition-colors">
+                    <td className="border-2 border-gray-400 p-3 font-bold bg-orange-400 text-sm">Yogurt</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">12.19%</td>
+                    <td className="border-2 border-gray-400 p-3 text-center font-bold text-sm">16.13%</td>
                   </tr>
                 </tbody>
               </table>
 
-              <div className="flex items-end justify-end gap-4 mt-4">
-                <div className="text-right">
-                  <div className="font-bold text-sm">Market Besar</div>
+              <div className="flex items-center justify-end gap-6 mt-4">
+                <div className="flex items-center gap-2">
+                  <div className="text-right">
+                    <div className="font-bold text-sm">Big Market</div>
+                  </div>
+                  <div className="w-8 h-6 border-r-4 border-t-4 border-gray-800"></div>
                 </div>
-                <div className="text-right">
-                  <div className="font-bold text-sm">Pertumbuhan cepat &</div>
-                  <div className="font-bold text-sm">Market Sedang</div>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-4 border-r-4 border-b-4 border-gray-800"></div>
+                  <div className="text-left">
+                    <div className="font-bold text-sm">Fast Growth &</div>
+                    <div className="font-bold text-sm">Medium Market</div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-orange-500 text-white p-6 rounded-xl text-center hover:bg-orange-600 transition-colors">
-              <p className="text-xl font-bold">
-                Dairy demand is increasing and consumers are spending more — making the category <span className="underline">attractive</span> to enter !
-              </p>
+            <div className="bg-gray-200 border-2 border-gray-400 rounded-2xl p-4 text-center mb-4">
+              <p className="text-sm font-semibold">Volume <span className="text-lg">&lt;</span> Value <span className="text-lg">=</span> Positive Indication of Profitability</p>
             </div>
 
-            <p className="text-xs text-gray-500 mt-4">Asumsi: Data tahun tersebut dapat digunakan sebagai argumen</p>
-          </div>
-        </div>
-      )
-    },
+            <h3 className="text-xl font-bold text-center text-gray-800 mb-3">Indonesian Dairy Market Size Prediction</h3>
+            <p className="text-xs text-center text-gray-600 mb-4">Source: the-shiv.com/indonesia-dairy-market/</p>
 
-    // Slide 4: Category Breakdown (Matching reference image 1)
-    {
-      title: "Category Breakdown",
-      bgColor: "bg-white",
-      content: (
-        <div className="h-full p-12">
-          <div className="mb-6">
-            <h3 className="text-gray-700 text-lg mb-2">
-              <span className="font-bold">Diversity category</span> helps penetration
-            </h3>
-            <p className="text-gray-600">
-              Choices based on community demand upon seen from the<br />
-              growth of the dairy industry in 2017-2018
+            <div className="grid grid-cols-2 gap-3 mb-4">
+              <div className="bg-gray-200 border-2 border-gray-400 rounded-2xl p-4 text-center">
+                <p className="text-sm font-bold">Predicted US$27.6B in 2025</p>
+              </div>
+              <div className="bg-gray-200 border-2 border-gray-400 rounded-2xl p-4 text-center">
+                <p className="text-sm font-bold">Predicted Growing 6.56% CAGR 2025 - 2023</p>
+              </div>
+            </div>
+
+            <p className="text-center text-sm font-bold">
+              Dairy demand is increasing and consumers are spending more<br />
+              <span className="text-red-600">– making the category attractive to enter !</span>
             </p>
           </div>
+        </div>
+      )
+    },
 
-          <div className="flex justify-between items-start gap-8 mb-6">
-            <h2 className="text-5xl font-bold text-right flex-1">
-              Indonesian Beverages Market<br />
-              <span className="text-3xl">Category 2017 - 2018</span>
-            </h2>
+    // Slide 6: Competitor's Focus & SMG's Branding (was Slide 4)
+    {
+      title: "Competitor's Focus & SMG's Branding",
+      bgColor: "bg-white",
+      content: (
+        <div className="h-full flex flex-col p-12">
+          {/* Top Section - Competitor's Focus */}
+          <div className="mb-6 pb-6">
+            <h2 className="text-3xl font-bold mb-2">Competitor's Focus</h2>
+            <p className="text-sm text-gray-600 mb-4 italic">Top 3 UHT Company in Indonesia</p>
+            <p className="text-sm text-gray-600 mb-4 italic">Source: UHT Annual Report 2024</p>
+
+            <div className="space-y-3">
+              <p className="text-sm">
+                <span className="font-bold">Ultrajaya</span> – Strongest in white & flavoured UHT for the mass segment
+              </p>
+              <p className="text-sm">
+                <span className="font-bold">FrieslandCampina</span> – Family Segment, Primarily white liquid milk.
+              </p>
+              <p className="text-sm">
+                <span className="font-bold">Indofood CBP (Indomilk)</span> – Kids Segment, Especially flavoured UHT
+              </p>
+            </div>
           </div>
 
-          <div className="grid grid-cols-3 gap-8">
-            {/* Milk Column */}
-            <div className="space-y-4 hover:scale-105 transition-transform duration-300">
-              <h3 className="text-4xl font-bold">Milk</h3>
-              
-              <div className="space-y-3">
-                <div className="text-orange-500 font-semibold">
-                  <div>Flavoured</div>
-                  <div>White Liquid</div>
-                  <div>White - Powdered</div>
-                </div>
-                
-                <div className="space-y-1 text-sm">
-                  <p>Volume: 1047 → 1108 (+61 mio L)</p>
-                  <p className="font-bold">Value: 25038 → 27091 (+2065 bio IDR)</p>
-                </div>
+          <div className="border-t-4 border-red-600 mb-6 pb-6"></div>
 
-                <div className="text-orange-500 font-semibold mt-6">
-                  <div>UHT</div>
-                  <div>Fresh</div>
-                </div>
-                
-                <div className="space-y-1 text-sm">
-                  <p>Volume: 300 → 315 (+15 mio L)</p>
-                  <p className="font-bold">Value: 6672 → 7188 (+516 bio IDR)</p>
-                </div>
+          {/* Middle Section - SMG's Branding */}
+          <div className="mb-6 pb-6">
+            <h2 className="text-3xl font-bold mb-2">SMG's Branding</h2>
+            <p className="text-sm text-gray-600 italic mb-4">Source: sarimuni.co.id</p>
+
+            <div className="grid grid-cols-2 gap-4">
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-4 text-center">
+                <p className="font-bold text-black">High Quality & Varied Flavours</p>
               </div>
-
-              <div className="border-2 border-gray-800 rounded-2xl p-3 mt-6">
-                <p className="text-center text-sm font-semibold">Lagre, Stable, High Revenue</p>
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-4 text-center">
+                <p className="font-bold text-black">Extensive Distribution Network</p>
+              </div>
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-4 text-center">
+                <p className="font-bold text-black">Lower Middle Market</p>
+              </div>
+              <div className="bg-gradient-to-r from-yellow-400 to-orange-400 rounded-2xl p-4 text-center">
+                <p className="font-bold text-black">Market Support</p>
               </div>
             </div>
+          </div>
 
-            {/* Yoghurt Column */}
-            <div className="space-y-4 hover:scale-105 transition-transform duration-300">
-              <h3 className="text-4xl font-bold">Yoghurt</h3>
-              
-              <div className="space-y-3">
-                <div className="text-orange-500 font-semibold">
-                  <div>Drinking/Cultured Yoghurt</div>
-                  <div>Spoonable</div>
-                </div>
-                
-                <div className="space-y-1 text-sm">
-                  <p>Volume: 212 → 237 (+251 mio L)</p>
-                  <p className="font-bold">Value: 7050 → 8086 (+1036 bio IDR)</p>
-                </div>
+          <div className="border-t-4 border-yellow-400 mb-6 pb-6"></div>
 
-                <div className="text-orange-500 font-semibold mt-6">
-                  <div>Flavoured</div>
-                  <div>Natural</div>
-                </div>
-                
-                <div className="space-y-1 text-sm">
-                  <p>Volume: 14 → 15 (+1 mio L)</p>
-                  <p className="font-bold">Value: 1109 → 1246 (+137 bio IDR)</p>
-                </div>
-              </div>
-
-              <div className="border-2 border-gray-800 rounded-2xl p-3 mt-6">
-                <p className="text-center text-sm font-semibold">Small, but Fast Growing</p>
-              </div>
-            </div>
-
-            {/* Ice Cream Column */}
-            <div className="space-y-4 hover:scale-105 transition-transform duration-300">
-              <h3 className="text-4xl font-bold">Ice Cream</h3>
-              
-              <div className="space-y-3">
-                <div className="text-orange-500 font-semibold">
-                  <div>Individually Wrapped</div>
-                  <div>Famili Packs</div>
-                </div>
-                
-                <div className="space-y-1 text-sm">
-                  <p>Volume: 189 → 212 (+23 mio L)</p>
-                  <p className="font-bold">Value: 10442 → 11822 (+1380 bio IDR)</p>
-                </div>
-              </div>
-
-              <div className="border-2 border-gray-800 rounded-2xl p-3 mt-24">
-                <p className="text-center text-sm font-semibold">High-Value Growth Category</p>
-              </div>
-            </div>
+          {/* Bottom Section - Target Market */}
+          <div>
+            <h2 className="text-3xl font-bold mb-4">Target Market</h2>
+            <ul className="space-y-2">
+              <li className="text-sm">• Demography: <span className="font-bold">Children, Younger, Family</span></li>
+              <li className="text-sm">• Geography: <span className="font-bold">Urban–Semi urban (GT focus)</span></li>
+              <li className="text-sm">• Behaviour: <span className="font-bold">Affordable Buyers, High-frequency Buyers</span></li>
+            </ul>
           </div>
         </div>
       )
     },
 
-    // Slide 5: Competition Landscape (Matching reference image 2)
+    // Slide 4: Competition Landscape (was Slide 5)
     {
       title: "Competition Landscape",
       bgColor: "bg-gradient-to-br from-yellow-400 to-orange-500",
       content: (
-        <div className="h-full p-12">
-          <h2 className="text-white text-4xl font-bold mb-8">
-            Indonesian Beverages Market<br />
-            Competition Landscape 2017 - 2018
+        <div className="h-full flex flex-col p-8">
+          <h2 className="text-white text-3xl font-bold mb-4">
+            Indonesian Beverages Market - Competition Landscape 2017-2018
           </h2>
 
-          <div className="bg-white rounded-3xl p-8">
-            <div className="grid grid-cols-3 gap-8 mb-6">
+          <div className="bg-white rounded-2xl p-6 flex-1 flex flex-col">
+            <div className="grid grid-cols-3 gap-6 mb-3">
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-2">CR3 by Value</h3>
-                <p className="text-sm">(Top 3 Market Holders )</p>
+                <h3 className="text-base font-bold mb-1">CR3 by Value</h3>
+                <p className="text-xs">(Top 3 Market Holders)</p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-2">Value vs Volume</h3>
-                <p className="text-sm">Share Comparison</p>
+                <h3 className="text-base font-bold mb-1">Value vs Volume</h3>
+                <p className="text-xs">Share Comparison</p>
               </div>
               <div className="text-center">
-                <h3 className="text-xl font-bold mb-2">Key Points</h3>
+                <h3 className="text-base font-bold mb-1">Key Points</h3>
               </div>
             </div>
 
-            <hr className="border-gray-300 mb-6" />
+            <hr className="border-gray-300 mb-3" />
 
             {/* Milk Row */}
-            <div className="grid grid-cols-3 gap-8 mb-8 hover:bg-gray-50 p-4 rounded-xl transition-colors">
+            <div className="grid grid-cols-3 gap-4 mb-2 hover:bg-gray-50 p-3 rounded-lg transition-colors">
               <div>
-                <h4 className="text-2xl font-bold mb-2">Milk <span className="text-sm font-normal">Medium Intensity</span></h4>
-                <div className="text-6xl font-bold text-red-600 mb-4">55%</div>
-                <div className="text-sm space-y-1">
-                  <p>PT Ultrajaya Milk Industry Tbk</p>
+                <h4 className="text-sm font-bold mb-1">Milk <span className="text-xs font-normal">Medium Intensity</span></h4>
+                <div className="text-3xl font-bold text-red-600 mb-1">55%</div>
+                <div className="text-xs space-y-0.5">
+                  <p>PT Ultrajaya Milk</p>
                   <p>Royal Frieslandcampina</p>
-                  <p>PT Indofood Sukses Makmur</p>
+                  <p>PT Indofood</p>
                 </div>
               </div>
               <div className="flex flex-col justify-center">
-                <p className="text-sm mb-2">% Volume {'>'} % Value</p>
-                <p className="text-sm">(most of them)</p>
+                <p className="text-xs mb-1">% Volume {'>'} % Value</p>
+                <p className="text-xs">(most)</p>
               </div>
               <div className="flex flex-col justify-center">
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Market relatively dispersed</li>
-                  <li>Strong value segment (low price per liter)</li>
+                <ul className="text-xs space-y-0.5 list-disc list-inside">
+                  <li>Market dispersed</li>
+                  <li>Strong value segment</li>
                 </ul>
               </div>
             </div>
 
             {/* Yoghurt Row */}
-            <div className="grid grid-cols-3 gap-8 mb-8 hover:bg-gray-50 p-4 rounded-xl transition-colors">
+            <div className="grid grid-cols-3 gap-4 mb-2 hover:bg-gray-50 p-3 rounded-lg transition-colors">
               <div>
-                <h4 className="text-2xl font-bold mb-2">Yoghurt <span className="text-sm font-normal">High Intensity</span></h4>
-                <div className="text-6xl font-bold text-red-600 mb-4">81%</div>
-                <div className="text-sm space-y-1">
-                  <p>Yakult Honsha Co., Ltd <span className="italic">(Dominant)</span></p>
+                <h4 className="text-sm font-bold mb-1">Yoghurt <span className="text-xs font-normal">High Intensity</span></h4>
+                <div className="text-3xl font-bold text-red-600 mb-1">81%</div>
+                <div className="text-xs space-y-0.5">
+                  <p>Yakult <span className="italic">(Dominant)</span></p>
                   <p>Macro Group</p>
-                  <p>PT Nutrifood Indonesia</p>
+                  <p>PT Nutrifood</p>
                 </div>
               </div>
               <div className="flex flex-col justify-center">
-                <p className="text-sm mb-1">Volume 75% {'>'} Value 58%</p>
-                <p className="text-sm mb-1">Volume 9% {'<'} Value 14%</p>
-                <p className="text-sm">Volume 8% = Value 8%</p>
+                <p className="text-xs mb-0.5">Vol 75% {'>'} Val 58%</p>
+                <p className="text-xs mb-0.5">Vol 9% {'<'} Val 14%</p>
+                <p className="text-xs">Vol 8% = Val 8%</p>
               </div>
               <div className="flex flex-col justify-center">
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Largely dominated by major players with low price-per-liter offerings</li>
+                <ul className="text-xs space-y-0.5 list-disc list-inside">
+                  <li>Dominated by major players</li>
                 </ul>
               </div>
             </div>
 
             {/* Ice Cream Row */}
-            <div className="grid grid-cols-3 gap-8 hover:bg-gray-50 p-4 rounded-xl transition-colors">
+            <div className="grid grid-cols-3 gap-4 hover:bg-gray-50 p-3 rounded-lg transition-colors">
               <div>
-                <h4 className="text-2xl font-bold mb-2">Ice Cream <span className="text-sm font-normal">High Intensity</span></h4>
-                <div className="text-6xl font-bold text-red-600 mb-4">87%</div>
-                <div className="text-sm space-y-1">
-                  <p>Unilever PLC <span className="italic">(Dominant)</span></p>
-                  <p>PT. Campina Ice Cream Industry</p>
-                  <p>Ezaki Glico Co., Ltd.</p>
+                <h4 className="text-sm font-bold mb-1">Ice Cream <span className="text-xs font-normal">High Intensity</span></h4>
+                <div className="text-3xl font-bold text-red-600 mb-1">87%</div>
+                <div className="text-xs space-y-0.5">
+                  <p>Unilever <span className="italic">(Dominant)</span></p>
+                  <p>PT. Campina</p>
+                  <p>Ezaki Glico</p>
                 </div>
               </div>
               <div className="flex flex-col justify-center">
-                <p className="text-sm mb-1">Volume 63% {'<'} Value 70%</p>
-                <p className="text-sm mb-1">Volume 12 % {'<'} Value 13 %</p>
-                <p className="text-sm">Volume 4% = Value 4%</p>
+                <p className="text-xs mb-0.5">Vol 63% {'<'} Val 70%</p>
+                <p className="text-xs mb-0.5">Vol 12% {'<'} Val 13%</p>
+                <p className="text-xs">Vol 4% = Val 4%</p>
               </div>
               <div className="flex flex-col justify-center">
-                <ul className="text-sm space-y-1 list-disc list-inside">
-                  <li>Large value segment, high unit price</li>
+                <ul className="text-xs space-y-0.5 list-disc list-inside">
+                  <li>Large value segment</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 bg-orange-600 text-white p-4 rounded-xl flex items-center justify-end gap-4">
-            <p className="text-xl font-bold">
-              <span className="text-yellow-300">Milk</span> remains relatively open and dispersed, while{' '}
-              <span className="text-yellow-300">Yoghurt</span> is highly concentrated around a dominant player and{' '}
-              <span className="text-yellow-300">Ice Cream</span> is concentrated with large value segment
+          <div className="mt-3 bg-orange-600 text-white p-3 rounded-lg flex items-center justify-center gap-2">
+            <p className="text-sm font-bold">
+              <span className="text-yellow-300">Milk</span> open, <span className="text-yellow-300">Yoghurt</span> concentrated, <span className="text-yellow-300">Ice Cream</span> concentrated with high value
             </p>
           </div>
 
-          <p className="text-xs text-white/80 mt-4">Source: BOOST Business Case Document</p>
+          <p className="text-xs text-white/80 mt-2">Source: BOOST Business Case Document</p>
         </div>
       )
     },
 
-    // Slide 6: Expansion Strategy (Matching reference image 3)
+    // Slide 7: Expansion Strategy (was Slide 6)
     {
       title: "Expansion Strategy",
       bgColor: "bg-white",
       content: (
         <div className="h-full grid grid-cols-2">
           {/* Left side - Orange */}
-          <div className="bg-gradient-to-br from-yellow-400 via-orange-400 to-orange-500 p-12 flex flex-col justify-center">
-            <h2 className="text-7xl font-bold mb-12">Expansion</h2>
+          <div className="bg-gradient-to-br from-yellow-400 via-orange-400 to-orange-500 p-8 flex flex-col justify-between">
+            <h2 className="text-5xl font-bold mb-4">Expansion</h2>
             
-            <div className="space-y-8">
-              <div className="flex items-center gap-6 hover:scale-105 transition-transform duration-300">
-                <div className="w-24 h-24 rounded-full bg-red-600 flex items-center justify-center shadow-lg">
-                  <span className="text-white text-5xl font-bold">1</span>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center shadow-lg flex-shrink-0">
+                  <span className="text-white text-3xl font-bold">1</span>
                 </div>
                 <div>
-                  <h3 className="text-5xl font-bold mb-2">Milk</h3>
-                  <div className="text-sm space-y-1">
-                    <p>Largest and still-open market</p>
+                  <h3 className="text-2xl font-bold mb-0.5">Milk</h3>
+                  <div className="text-xs space-y-0.5">
+                    <p>Largest, open market</p>
                     <p>Stable growth (CAGR)</p>
                     <p>CR3 = 55%</p>
-                    <p>Fast to scale</p>
                   </div>
                 </div>
               </div>
 
-              <div className="pl-12">
-                <div className="text-4xl mb-4">↓</div>
-                <p className="text-sm font-semibold">Step by Step</p>
+              <div className="pl-4">
+                <div className="text-xl mb-1">↓</div>
+                <p className="text-xs font-semibold">Step by Step</p>
               </div>
 
-              <div className="flex items-center gap-6 hover:scale-105 transition-transform duration-300">
-                <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-lg">
-                  <span className="text-orange-600 text-5xl font-bold">2</span>
+              <div className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-lg flex-shrink-0">
+                  <span className="text-orange-600 text-3xl font-bold">2</span>
                 </div>
                 <div>
-                  <h3 className="text-5xl font-bold mb-2">Yoghurt</h3>
-                  <div className="text-sm space-y-1">
+                  <h3 className="text-2xl font-bold mb-0.5">Yoghurt</h3>
+                  <div className="text-xs space-y-0.5">
                     <p>Fast Growth (CAGR)</p>
                     <p>CR3 = 81%</p>
                   </div>
                 </div>
               </div>
 
-              <div className="pl-12">
-                <div className="text-4xl mb-4">↓</div>
+              <div className="pl-4">
+                <div className="text-xl mb-1">↓</div>
               </div>
 
-              <div className="flex items-center gap-6 hover:scale-105 transition-transform duration-300">
-                <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-lg">
-                  <span className="text-orange-600 text-5xl font-bold">3</span>
+              <div className="flex items-center gap-3 hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center shadow-lg flex-shrink-0">
+                  <span className="text-orange-600 text-3xl font-bold">3</span>
                 </div>
                 <div>
-                  <h3 className="text-5xl font-bold mb-2">Ice Cream</h3>
-                  <div className="text-sm space-y-1">
-                    <p>HIgh Value</p>
+                  <h3 className="text-2xl font-bold mb-0.5">Ice Cream</h3>
+                  <div className="text-xs space-y-0.5">
+                    <p>High Value</p>
                     <p>CR3 = 87%</p>
-                    <p>Intense Competition</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <p className="text-xs text-white/70 mt-12">Source: BOOST Business Case Document</p>
+            <p className="text-xs text-white/70">Source: BOOST Business Case Document</p>
           </div>
 
           {/* Right side - White */}
-          <div className="bg-white p-12 flex flex-col overflow-y-auto">
-            <div className="mb-8">
-              <h3 className="text-3xl font-bold mb-4">
-                Why is <span className="text-red-600">Milk</span>, with<br />
-                its large, open<br />
-                market and rapid<br />
-                scale, a <span className="underline">top<br />
-                priority</span> ?
+          <div className="bg-white p-8 flex flex-col">
+            <div className="mb-3">
+              <h3 className="text-lg font-bold mb-2">
+                Why <span className="text-red-600">Milk</span> is<br />
+                <span className="underline">top priority</span>?
               </h3>
             </div>
 
-            <div className="space-y-6 mb-8">
-              <p className="text-gray-700">Build distribution scale faster</p>
-              <p className="text-gray-700">Strengthen the brand through high-rotation products</p>
-              <p className="text-gray-700">Establish a foundation before entering more competitive dairy categories</p>
+            <div className="space-y-2 mb-4 text-sm">
+              <p className="text-gray-700">• Build distribution scale faster</p>
+              <p className="text-gray-700">• Strengthen brand through high-rotation products</p>
+              <p className="text-gray-700">• Establish foundation before entering competitive categories</p>
             </div>
 
-            <div className="flex-1 flex items-center justify-center mb-8">
+            <div className="mb-2">
               <table className="w-full border-collapse text-xs">
                 <thead>
                   <tr className="bg-gray-100">
-                    <th className="border border-gray-300 p-2 text-left"></th>
-                    <th className="border border-gray-300 p-2 text-center font-bold" colSpan="2">By Volume (mio liters)</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">Growth<br />(%)</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold" colSpan="2">By Value (bio IDR)</th>
-                    <th className="border border-gray-300 p-2 text-center font-bold">Growth<br />(%)</th>
-                  </tr>
-                  <tr className="bg-gray-100">
-                    <th className="border border-gray-300 p-1"></th>
-                    <th className="border border-gray-300 p-1 text-center text-xs">2017</th>
-                    <th className="border border-gray-300 p-1 text-center text-xs">2018</th>
-                    <th className="border border-gray-300 p-1"></th>
-                    <th className="border border-gray-300 p-1 text-center text-xs">2017</th>
-                    <th className="border border-gray-300 p-1 text-center text-xs">2018</th>
-                    <th className="border border-gray-300 p-1"></th>
+                    <th className="border border-gray-300 p-1 text-left text-xs"></th>
+                    <th className="border border-gray-300 p-1 text-center font-bold">2017</th>
+                    <th className="border border-gray-300 p-1 text-center font-bold">2018</th>
+                    <th className="border border-gray-300 p-1 text-center font-bold">Growth</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="border border-gray-300 p-2 font-semibold">Flavoured</td>
-                    <td className="border border-gray-300 p-2 text-right">706</td>
-                    <td className="border border-gray-300 p-2 text-right">752</td>
-                    <td className="border border-gray-300 p-2 text-right">6.52%</td>
-                    <td className="border border-gray-300 p-2 text-right">17700</td>
-                    <td className="border border-gray-300 p-2 text-right">19203</td>
-                    <td className="border border-gray-300 p-2 text-right">8.49%</td>
+                    <td className="border border-gray-300 p-1 font-semibold text-xs">Flavoured</td>
+                    <td className="border border-gray-300 p-1 text-right">706</td>
+                    <td className="border border-gray-300 p-1 text-right">752</td>
+                    <td className="border border-gray-300 p-1 text-right">6.52%</td>
                   </tr>
                   <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="border border-gray-300 p-2 font-semibold">White Liquid</td>
-                    <td className="border border-gray-300 p-2 text-right">300</td>
-                    <td className="border border-gray-300 p-2 text-right">315</td>
-                    <td className="border border-gray-300 p-2 text-right">5.00%</td>
-                    <td className="border border-gray-300 p-2 text-right">6672</td>
-                    <td className="border border-gray-300 p-2 text-right">7188</td>
-                    <td className="border border-gray-300 p-2 text-right">7.73%</td>
+                    <td className="border border-gray-300 p-1 font-semibold text-xs">White Liquid</td>
+                    <td className="border border-gray-300 p-1 text-right">300</td>
+                    <td className="border border-gray-300 p-1 text-right">315</td>
+                    <td className="border border-gray-300 p-1 text-right">5.00%</td>
                   </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="border border-gray-300 p-2 font-semibold text-xs">White -<br />Powdered</td>
-                    <td className="border border-gray-300 p-2 text-right">41</td>
-                    <td className="border border-gray-300 p-2 text-right">41</td>
-                    <td className="border border-gray-300 p-2 text-right">0.00%</td>
-                    <td className="border border-gray-300 p-2 text-right">665</td>
-                    <td className="border border-gray-300 p-2 text-right">699</td>
-                    <td className="border border-gray-300 p-2 text-right">5.11%</td>
-                  </tr>
-                  <tr className="bg-orange-100 font-bold">
-                    <td className="border border-gray-300 p-2">Total</td>
-                    <td className="border border-gray-300 p-2 text-right">1047</td>
-                    <td className="border border-gray-300 p-2 text-right">1108</td>
-                    <td className="border border-gray-300 p-2 text-right">11.52%</td>
-                    <td className="border border-gray-300 p-2 text-right">25037</td>
-                    <td className="border border-gray-300 p-2 text-right">27090</td>
-                    <td className="border border-gray-300 p-2 text-right">21.34%</td>
-                  </tr>
-                  <tr className="bg-orange-200 font-bold">
-                    <td className="border border-gray-300 p-2">UHT</td>
-                    <td className="border border-gray-300 p-2 text-right">234</td>
-                    <td className="border border-gray-300 p-2 text-right">247</td>
-                    <td className="border border-gray-300 p-2 text-right">5.56%</td>
-                    <td className="border border-gray-300 p-2 text-right">4902</td>
-                    <td className="border border-gray-300 p-2 text-right">5338</td>
-                    <td className="border border-gray-300 p-2 text-right">8.89%</td>
-                  </tr>
-                  <tr className="hover:bg-gray-50 transition-colors">
-                    <td className="border border-gray-300 p-2 font-semibold">Fresh</td>
-                    <td className="border border-gray-300 p-2 text-right">66</td>
-                    <td className="border border-gray-300 p-2 text-right">68</td>
-                    <td className="border border-gray-300 p-2 text-right">3.03%</td>
-                    <td className="border border-gray-300 p-2 text-right">1770</td>
-                    <td className="border border-gray-300 p-2 text-right">1851</td>
-                    <td className="border border-gray-300 p-2 text-right">4.58%</td>
-                  </tr>
-                  <tr className="bg-orange-100 font-bold">
-                    <td className="border border-gray-300 p-2">Total</td>
-                    <td className="border border-gray-300 p-2 text-right">300</td>
-                    <td className="border border-gray-300 p-2 text-right">315</td>
-                    <td className="border border-gray-300 p-2 text-right">8.59%</td>
-                    <td className="border border-gray-300 p-2 text-right">6672</td>
-                    <td className="border border-gray-300 p-2 text-right">7189</td>
-                    <td className="border border-gray-300 p-2 text-right">13.47%</td>
+                  <tr className="bg-orange-100 font-bold text-xs">
+                    <td className="border border-gray-300 p-1">Total</td>
+                    <td className="border border-gray-300 p-1 text-right">1047</td>
+                    <td className="border border-gray-300 p-1 text-right">1108</td>
+                    <td className="border border-gray-300 p-1 text-right">5.8%</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div className="mt-4">
-              <div className="border-4 border-orange-400 rounded-2xl p-4 mb-4 text-center hover:scale-105 transition-transform">
-                <p className="text-2xl font-bold text-orange-600">UHT</p>
+            <div className="space-y-1 mb-2">
+              <div className="border-2 border-orange-400 rounded-lg p-2 text-center hover:scale-105 transition-transform">
+                <p className="text-sm font-bold text-orange-600">UHT</p>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="border-4 border-orange-400 rounded-2xl p-4 text-center hover:scale-105 transition-transform">
-                  <p className="text-xl font-bold text-orange-600">Flavoured</p>
+              <div className="grid grid-cols-2 gap-2">
+                <div className="border-2 border-orange-400 rounded-lg p-2 text-center hover:scale-105 transition-transform">
+                  <p className="text-xs font-bold text-orange-600">Flavoured</p>
                 </div>
-                <div className="border-4 border-orange-400 rounded-2xl p-4 text-center hover:scale-105 transition-transform">
-                  <p className="text-xl font-bold text-orange-600">White Liquid</p>
-                </div>
-              </div>
-              <div className="mt-4 space-y-2 text-sm">
-                <div className="flex items-start gap-2">
-                  <span>+</span>
-                  <span>Long shelf life → safer for distributors</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span>+</span>
-                  <span>Flexible product variations and easy to develop</span>
+                <div className="border-2 border-orange-400 rounded-lg p-2 text-center hover:scale-105 transition-transform">
+                  <p className="text-xs font-bold text-orange-600">White Liquid</p>
                 </div>
               </div>
             </div>
 
-            <p className="text-xs text-gray-500 mt-6">Indonesian Milk Market Segmentation 2017 - 2018</p>
+            <div className="space-y-1 text-xs">
+              <p>✓ Long shelf life → safer</p>
+              <p>✓ Flexible product variations</p>
+            </div>
           </div>
         </div>
       )
     },
 
-    // Slide 7: SMG Entry Size (Matching reference image 4)
+    // Slide 7: Market & Operational Feasibility
     {
-      title: "SMG's Entry Size",
+      title: "Market & Operational Feasibility",
       bgColor: "bg-white",
       content: (
-        <div className="h-full grid grid-cols-2">
-          {/* Left side */}
-          <div className="p-12 flex flex-col justify-center">
-            <h2 className="text-4xl font-bold mb-8">SMG's Entry Size into the Segment</h2>
-            
-            <div className="relative flex items-center justify-center mb-12">
-              {/* Concentric circles */}
-              <div className="relative w-96 h-96">
-                {/* Outer circle */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-center justify-center hover:scale-105 transition-transform duration-500">
-                  <div className="text-center text-white">
-                    <p className="text-2xl font-bold">12.330 Mio USD</p>
-                  </div>
-                </div>
-                
-                {/* Middle circle */}
-                <div className="absolute inset-12 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center hover:scale-105 transition-transform duration-500">
-                  <div className="text-center text-white">
-                    <p className="text-xl font-bold">748 Mio USD</p>
-                  </div>
-                </div>
-                
-                {/* Inner circle */}
-                <div className="absolute inset-24 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center hover:scale-105 transition-transform duration-500">
-                  <div className="text-center text-white">
-                    <p className="text-lg font-bold">8.98 Mio USD</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Labels */}
-              <div className="absolute -right-8 top-0">
-                <div className="bg-white p-2 rounded shadow-lg hover:shadow-xl transition-shadow">
-                  <p className="text-sm font-bold">Total Milk Market in Indonesia</p>
-                  <p className="text-xs text-gray-600">Source: Statista</p>
-                </div>
-              </div>
-
-              <div className="absolute -right-8 top-1/3">
-                <div className="bg-white p-2 rounded shadow-lg max-w-xs hover:shadow-xl transition-shadow">
-                  <p className="text-sm font-bold">Total UHT Milk Market in Indonesia</p>
-                  <p className="text-xs">ULTJ 324 Mio USD (77% Rev);</p>
-                  <p className="text-xs">Covers 32% Market Share</p>
-                  <p className="text-xs text-gray-600">Source: ultrajaya.co.id</p>
-                </div>
-              </div>
-
-              <div className="absolute -right-8 bottom-0">
-                <div className="bg-white p-2 rounded shadow-lg max-w-xs hover:shadow-xl transition-shadow">
-                  <p className="text-sm font-bold">UHT Markets Accessible to SMG</p>
-                  <p className="text-xs">SAM x GT 60% x 2%</p>
-                  <p className="text-xs italic">Assumption: SMG Dominant in GT;</p>
-                  <p className="text-xs italic">Realistic 2% market capture</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gray-100 p-6 rounded-xl hover:bg-gray-200 transition-colors">
-              <p className="text-sm text-gray-700 leading-relaxed">
-                Dengan ukuran pasar UHT yang besar (SAM US$748M), peluang realistis SMG mencapai SOM ±US$9M, risiko produksi rendah, dan kekuatan SMG di GT, ekspansi ke UHT milk adalah bisnis yang sangat layak dan berpotensi menjadi growth engine baru.
-              </p>
-            </div>
-
-            <p className="text-xs text-gray-500 mt-4">Buat dalam persentase</p>
+        <div className="h-full flex flex-col">
+          {/* Header */}
+          <div className="bg-gradient-to-r from-yellow-400 to-orange-400 px-12 py-4 flex justify-between items-center border-b-4 border-gray-400">
+            <h2 className="text-2xl font-bold text-black">Market Feasibility</h2>
+            <h2 className="text-2xl font-bold text-black">Operational Feasibility</h2>
           </div>
 
-          {/* Right side */}
-          <div className="p-12 flex flex-col justify-center bg-gray-50">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">Competitor Gap:</h3>
-              <p className="text-lg font-semibold mb-2">Top 3 UHT Company in Indonesia: (Source: PT Ultrajaya Milk Industry & Trading Company Tbk)</p>
-            </div>
+          {/* Content */}
+          <div className="flex-1 grid grid-cols-2 gap-8 p-8 overflow-y-auto">
+            {/* Left side - Market Feasibility */}
+            <div className="flex flex-col">
+              <div className="flex gap-6 items-start">
+                {/* Concentric circles with labels */}
+                <div className="relative w-56 h-56 flex-shrink-0">
+                  {/* Outer circle - 12.330 Mio USD */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-300 to-orange-400 flex items-start justify-center pt-4 shadow-lg">
+                    <p className="text-white font-bold text-sm">12.330 Mio USD</p>
+                  </div>
+                  
+                  {/* Middle circle - 748 Mio USD */}
+                  <div className="absolute inset-14 rounded-full bg-gradient-to-br from-yellow-400 to-orange-500 flex items-start justify-center pt-3 shadow-md">
+                    <p className="text-white font-bold text-sm">748 Mio USD</p>
+                  </div>
+                  
+                  {/* Inner circle - 8.98 Mio USD */}
+                  <div className="absolute inset-28 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-sm">
+                    <p className="text-white font-bold text-sm">8.98 Mio USD</p>
+                  </div>
+                </div>
 
-            <div className="space-y-6 mb-8">
-              <div className="bg-white p-4 rounded-lg hover:scale-105 transition-transform shadow">
-                <p className="font-bold mb-2">1. PT Ultrajaya Milk Industry</p>
-                <p className="text-sm text-gray-700">leader UHT (~37% share), Focus on white & flavoured UHT mass market</p>
+                {/* Labels with connecting lines */}
+                <div className="space-y-10 pl-2 flex flex-col justify-start pt-0">
+                  {/* Label 1 - points to outer circle */}
+                  <div className="relative h-10 flex items-start">
+                    <div className="absolute -left-2 top-1 w-4 h-px bg-gray-600"></div>
+                    <div className="ml-4">
+                      <p className="font-bold text-sm">Total Milk Market in Indonesia</p>
+                      <p className="text-xs text-gray-600">Source: Statista</p>
+                    </div>
+                  </div>
+
+                  {/* Label 2 - points to middle circle */}
+                  <div className="relative h-10 flex items-start">
+                    <div className="absolute -left-2 top-1 w-4 h-px bg-gray-600"></div>
+                    <div className="ml-4">
+                      <p className="font-bold text-sm">Total UHT Milk Market in Indonesia</p>
+                      <p className="text-xs">ULTJ 324 Mio USD (77% Rev);</p>
+                      <p className="text-xs">Covers 32% Market Share</p>
+                      <p className="text-xs text-gray-600">Source: ultrajaya.co.id</p>
+                    </div>
+                  </div>
+
+                  {/* Label 3 - points to inner circle */}
+                  <div className="relative h-10 flex items-start">
+                    <div className="absolute -left-2 top-1 w-4 h-px bg-gray-600"></div>
+                    <div className="ml-4">
+                      <p className="font-bold text-sm">UHT Markets Accessible to SMG</p>
+                      <p className="text-xs">SAM x GT 60% x 2%</p>
+                      <p className="text-xs italic text-orange-600">Assumption: SMG Dominant in GT;</p>
+                      <p className="text-xs italic text-orange-600">Realistic 2% market capture</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-white p-4 rounded-lg hover:scale-105 transition-transform shadow">
-                <p className="font-bold mb-2">1. FrieslandCampina</p>
-                <p className="text-sm text-gray-700">Family Segment (white liquid)</p>
-              </div>
-
-              <div className="bg-white p-4 rounded-lg hover:scale-105 transition-transform shadow">
-                <p className="font-bold mb-2">1. Indofood CBP (Indomilk)</p>
-                <p className="text-sm text-gray-700">Kids Segment (flavoured)</p>
+              {/* Bottom statement */}
+              <div className="mt-auto pt-4">
+                <p className="font-bold text-base">SMG could potentially capture up to <span className="text-red-600">1.2%</span> of the Indonesian UHT market in the first year</p>
+                <div className="w-32 h-1 bg-gradient-to-r from-orange-400 to-orange-300 mt-2"></div>
               </div>
             </div>
 
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold mb-4">Segmentation:</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Demography: Family, Students</li>
-                <li>Geography: urban–semi urban (GT focus)</li>
-                <li>Behaviour: affordable buyers, high-frequency buyers</li>
-              </ul>
-            </div>
+            {/* Right side - Operational Feasibility */}
+            <div className="flex flex-col">
+              <p className="text-sm italic text-orange-600 font-semibold mb-4">Assumption: Using Max Capacity of OEM</p>
 
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Targeting (inti):</h3>
-              <ul className="list-disc list-inside space-y-2 text-sm">
-                <li>Lower-middle GT consumers</li>
-                <li>School children (small pack flavored UHT)</li>
-              </ul>
+              {/* Input boxes */}
+              <div className="flex gap-4 mb-6">
+                <div className="border-2 border-gray-800 rounded px-4 py-2 flex-1 text-center">
+                  <p className="font-bold text-sm">OEM Raw Milk</p>
+                  <p className="text-xs text-gray-600 mt-1">BOOST Business Case Document</p>
+                </div>
+                <div className="text-2xl font-bold text-gray-400">+</div>
+                <div className="border-2 border-gray-800 rounded px-4 py-2 flex-1 text-center">
+                  <p className="font-bold text-sm">OEM UHT Milk</p>
+                  <p className="text-xs text-orange-600 mt-1">Additional Assumption</p>
+                </div>
+              </div>
+
+              {/* Flow diagram */}
+              <div className="space-y-3 text-xs">
+                {/* Step 1 */}
+                <div className="text-center">
+                  <p className="font-bold">6.8M L/year Raw Milk</p>
+                  <p className="text-gray-600">(10% loss)</p>
+                </div>
+
+                <div className="text-center text-gray-400 text-lg">↓</div>
+
+                {/* Step 2 - Two columns */}
+                <div className="grid grid-cols-2 gap-4 mb-3">
+                  <div className="border-l-2 border-gray-400 pl-3">
+                    <p className="font-bold">Standard <u>UHT Machine</u> → 5.000 L/hour = 12.5 L/year → no bottleneck</p>
+                  </div>
+                  <div className="border-l-2 border-gray-400 pl-3">
+                    <p className="font-bold"><u>Packaging Machine</u> → 12.000 packs/hour = <span className="text-orange-600 font-bold">30 Mio packs/year</span></p>
+                    <p className="text-xs text-gray-600">source: chimene.in-made-in-china</p>
+                  </div>
+                </div>
+
+                <div className="text-center text-gray-400 text-lg">↓</div>
+
+                {/* Step 3 */}
+                <div className="text-center bg-gray-100 p-2 rounded">
+                  <p className="font-bold">6.8 L/year :</p>
+                  <p>Mini pack (60%): <span className="font-bold">23.3 M pack/year</span> +</p>
+                  <p>Big pack (40%): <span className="font-bold">3.6 M pack/year</span></p>
+                  <p className="font-bold mt-1">= <span className="text-orange-600">27 M packs/year</span></p>
+                </div>
+
+                <div className="text-center text-gray-400 text-lg">↓</div>
+
+                {/* Step 4 */}
+                <div className="text-center text-xs">
+                  <p>Max Filling Machine Capacity = 30M packs/year</p>
+                  <p>SMG Max Requirement = 27Mpacks/year</p>
+                </div>
+
+                <div className="text-center text-gray-400 text-lg mt-2">↓</div>
+
+                {/* Feasible */}
+                <div className="text-center">
+                  <p className="text-base font-bold text-green-600">Feasible</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       )
     },
 
-    // Slide 8: Product Concept (Matching reference image 5)
+    // Slide 9: Product Concept & Channel (was Slide 8)
     {
       title: "Product Concept & Channel",
       bgColor: "bg-white",
@@ -751,24 +681,113 @@ const Presentation = () => {
       )
     },
 
-    // Slide 9: Project Feasibility
+    // Slide 10: Project Feasibility (was Slide 9)
     {
       title: "Project Feasibility",
       bgColor: "bg-white",
       content: (
-        <div className="h-full flex items-center justify-center p-20">
-          <h1 className="text-9xl font-normal text-gray-900 hover:scale-110 transition-transform duration-300">Project feasibility</h1>
+        <div className="h-full grid grid-cols-2">
+          {/* Left side - Orange */}
+          <div className="bg-gradient-to-br from-yellow-400 to-orange-400 p-8 flex flex-col">
+            <h2 className="text-4xl font-bold mb-4">Financial Feasibility</h2>
+            
+            <p className="text-sm italic text-gray-700 mb-4">Assumption: Using Max Capacity of OEM</p>
+
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-bold">Raw Milk Cost = 40%-60% × Price to Channel</p>
+                <p className="text-gray-700">40% x 20.000 (Fresh Milk GT)</p>
+                <p className="font-bold">8.000/L</p>
+              </div>
+
+              <div>
+                <p className="font-bold mb-1">3 Size: 150 mL, 200 mL, 750 mL</p>
+              </div>
+
+              <div>
+                <p className="font-bold">Revenue</p>
+                <p className="text-gray-700 text-xs mb-1">=(23.3M pack/year × avg mini IDR 4,000)+(3.6M pack/year × big IDR 10,000)</p>
+                <p className="font-bold">= IDR 129.5 Bio / Year</p>
+              </div>
+
+              <div>
+                <p className="font-bold">COGS → Raw Milk, Packaging, Others</p>
+                <p className="text-orange-600 text-xs mb-1">Assumption: Mini Pack → 80% selling price → 3.200;</p>
+                <p className="text-orange-600 text-xs mb-1">Big Pack → 70% selling price → 7.000</p>
+                <p className="text-gray-700 text-xs mb-1">=(23.3M pack/year x IDR 3.200) + (3.6M pack/year x IDR 7.000)</p>
+                <p className="font-bold">= IDR 100 B/year</p>
+              </div>
+
+              <div>
+                <p className="font-bold">GP</p>
+                <p className="font-bold text-lg">= IDR 29.5 B/year = <span className="text-2xl">23%</span></p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right side - White */}
+          <div className="bg-white p-8 flex flex-col">
+            <div className="mb-2 pb-2 border-b-4 border-orange-400">
+              <h2 className="text-4xl font-bold">Expansion</h2>
+            </div>
+
+            <div className="space-y-6 flex-1">
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <span className="text-white text-3xl font-bold">1</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">OEM (Year 0-1)</h3>
+                  <p className="text-sm text-gray-700">Brand Awareness & Validate Demand</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <span className="text-white text-3xl font-bold">2</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">Scale Up (Year 1-3)</h3>
+                  <p className="text-sm text-gray-700">Expand Flavour Varieties & Distribution<br />Start Investing in Technology</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <span className="text-white text-3xl font-bold">3</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">New Category (Year 3-5)</h3>
+                  <p className="text-sm text-gray-700">Yoghurt Expansion</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <span className="text-white text-3xl font-bold">4</span>
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold">Dairy (Year 5-8)</h3>
+                  <p className="text-sm text-gray-700">Ice Cream Expansion<br />Dominate the Dairy Market<br />Market Support</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       )
     },
 
-    // Slide 10: Thank You
+    // Slide 11: Thank You (was Slide 10)
     {
       title: "Thank You",
-      bgColor: "bg-white",
+      bgColor: "bg-gradient-to-r from-white via-yellow-50 to-yellow-300",
       content: (
-        <div className="h-full flex items-center justify-center p-20">
-          <h1 className="text-9xl font-normal text-gray-900 hover:scale-110 transition-transform duration-300">Thank You</h1>
+        <div className="h-full flex items-center px-20">
+          <div className="space-y-6">
+            <h1 className="text-7xl font-bold text-black">Thank You</h1>
+            <div className="w-96 h-1 bg-red-600"></div>
+            <p className="text-2xl text-black">BOOST Business Day 2025 | Mutia Hendriani Putri</p>
+          </div>
         </div>
       )
     }
